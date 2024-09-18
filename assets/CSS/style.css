@@ -373,17 +373,20 @@ body{
     background-color: black;
     padding: 2rem;
     color: white;
+    background-image: url('../images/5th Section.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    height: 260vh;
 }
 
 .dark-1stContainer {
     position: relative;
     margin-bottom: 3rem;
-}
-
-.dark-1stContainer img {
-    width: 100%;
-    height: auto;
-    display: block;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .dark-1stContainer p {
@@ -391,43 +394,52 @@ body{
     bottom: 1rem;
     left: 1rem;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    line-height: 1.5rem;
     padding: 0.5rem;
     border-radius: 5px;
+    max-width: 50%; 
+    color: white; 
+    
 }
 
 .dark-2ndContainer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 2%; 
     margin-top: 20%;
+    
 }
 
 .left-img, .right-img {
-    width: 45%; 
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
-    border-radius: 10px;
+    width: 30%; 
+    height: 70vh;
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* backdrop-filter: blur(10px);
+    border-radius: 10px; */
     padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+    display: flex;
+    flex-direction: column;
+    /* border: 10px solid red; */
 }
 
-.left-img img, .right-img img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 5px; 
-}
-.right-img img {
-    width: 100%; 
-    margin-top: 70%;
-    height: auto; 
-    border-radius: 5px; 
+.left-img img{
+    width: 100%;
+    height: 70vh;
+  
 }
 
+.right-img img{
+    margin-top: 17rem;
+    width: 100%;
+    height: 100vh;
+   
+}
 
 .left-img p, .right-img p {
     margin-top: 1rem;
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
 }
 
 
