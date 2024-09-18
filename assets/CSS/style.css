@@ -291,12 +291,12 @@ body{
     background-color: black;
     color: white;
     padding: 2rem 0;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    font-family:bingkow;
-    background: transparent;
+    font-family: bingkow;
 }
 
 .afterMysterious h2 {
@@ -313,21 +313,25 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4; 
+    opacity: 0.4;
     z-index: 1;
+   
 }
 
 .afterMysterious-Boxes {
     display: flex;
-    justify-content: space-around;
-    width: 90%; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+    height: 100%;
     position: relative;
     z-index: 2;
-    gap: 2rem; 
-    padding: 1rem;
+    gap: 20rem; 
+    padding: 1rem; 
 }
 
-.afterMysterious-Box1, 
+.afterMysterious-Box1,
 .afterMysterious-Box2 {
     flex: 1;
     background: rgba(255, 255, 255, 0.1);
@@ -338,22 +342,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 70vh;
+   
 }
 
-.afterMysterious-Box1 img, 
-.afterMysterious-Box2 img {
-    width: 100%;
-    height: auto;
+
+.blurred-box img {
+    width: 92%;
+    max-height: 50vh; 
+    border: 1px solid white;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
-.afterMysterious-Box1 p, 
+.afterMysterious-Box1 h3,
+.afterMysterious-Box2 h3 {
+    margin: 22rem 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.afterMysterious-Box1 p,
 .afterMysterious-Box2 p {
     text-align: center;
-    margin-top: 15rem;
+    margin: 0; 
 }
+
 
 /* Section 6 */
 .dark-container {
