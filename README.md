@@ -1,6 +1,7 @@
 # Frontend Web Development Competition Webpage
 
-This repository contains the code for a webpage developed for the Frontend Web Development Coding Competition, where I achieved 1st place out of 33 contestants. The competition mandated the use of pure HTML, CSS, and JavaScript, with no frameworks allowed.
+This repository contains the code for a webpage developed for the Frontend Web Development Coding Competition, where I achieved 1st place out of 33 contestants. The competition mandated the use of pure HTML, CSS, and JavaScript, with no frameworks allowed. The entire project had to be completed within a 3-hour time limit.
+<a href="https://biwashgurung.github.io/FrontendWebDevelopmentCoding-Competition/"><strong>➥ View Live</strong></a>
 
 ## Project Overview
 
@@ -22,6 +23,21 @@ The project showcases my ability to design and implement a responsive and intera
       src: url("../font/Bingkow-BF66e3ef79797b9.ttf");
   }
 
+## Key Sections
+- **Navigation Bar:**
+  A sticky navigation bar with a backdrop filter for a glass effect.
+- **Hero Section**
+  Features a full-screen background image with overlay text and a button.
+- **Forest Gaze Section:**
+  Includes a description and an interactive image with a hover effect.
+- **Mysterious Gate Section:**
+  Displays a background image with a title and a button that reveals additional text on click.
+- **After Mysterious Section:**
+  Contains sections with blurred boxes and a full-page background image.
+- **Dark Container Section:**
+  Features a background image with two columns for images and text.
+- **Footer:**
+  A footer section with links and social media icons.
 
 ## Installation
 
