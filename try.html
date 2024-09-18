@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-bar {
+        display: flex;
+        padding: 0rem 1rem;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.101);
+      }
+
+      .nav-bar .navbar-menu ul {
+        display: flex;
+        list-style-type: none;
+        padding: 1rem;
+      }
+
+      .nav-bar .navbar-menu ul li {
+        display: inline-block;
+      }
+
+      .nav-bar .navbar-menu ul li a {
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-bar .navbar-menu ul li a:hover {
+        background-color: #71cfe0;
+      }
+      /* Hero section */
+      .hero-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .hero-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        z-index: 2;
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+
+      .hero-text h1 {
+        margin: 0;
+        font-size: 3rem;
+      }
+
+      .hero-text p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .hero-button {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        padding: 15px 30px;
+        background: rgba(255, 255, 255, 0.101);
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        cursor: pointer;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-button:hover {
+        background: rgba(255, 255, 255, 0.4);
+        border: none;
+      }
+
+      /* Forest Gaze Section */
+      .forest-gaze {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 2rem;
+      }
+
+      .forest-description {
+        flex: 1;
+        margin-right: 2rem;
+      }
+
+      .forest-description h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .forest-description p {
+        margin-bottom: 1rem;
+      }
+
+      .forest-description button {
+        padding: 0.5rem 1rem;
+        background-color: #fff;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .forest-description button:hover {
+        background-color: #666;
+      }
+
+      .forest-img {
+        flex: 1;
+      }
+
+      .forest-img img {
+        width: 100%;
+        height: 100vh;
+        border-radius: 8px;
+      }
+
+      /* Mysterious Gate Section  */
+
+      .mysterious-gate {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+      }
+
+      .mysterious-img-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .mysterious-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mysterious-gate h2 {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background-attachment: fixed;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        z-index: 2;
+      }
+
+      .mysterious-btn {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        padding: 15px 30px;
+        background: rgba(255, 255, 255, 0.101);
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        cursor: pointer;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .mysterious-btn:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      /* After Mysterious Gate */
+      .afterMysterious {
+        position: relative;
+        background-color: black;
+        color: white;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .afterMysterious h2 {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+
+      .afterMysterious img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+        z-index: 1;
+      }
+
+      .afterMysterious-Boxes {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        position: relative;
+        z-index: 2;
+        gap: 2rem;
+        padding: 1rem;
+      }
+
+      .afterMysterious-Box1,
+      .afterMysterious-Box2 {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+      }
+
+      .afterMysterious-Box1 img,
+      .afterMysterious-Box2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .afterMysterious-Box1 p,
+      .afterMysterious-Box2 p {
+        text-align: center;
+        margin-top: 15rem;
+      }
+
+      /* Section 6 */
+      .dark-container {
+        background-color: black;
+        padding: 2rem;
+        color: white;
+      }
+
+      .dark-1stContainer {
+        position: relative;
+        margin-bottom: 3rem;
+      }
+
+      .dark-1stContainer img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .dark-1stContainer p {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+
+      .dark-2ndContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20%;
+      }
+
+      .left-img,
+      .right-img {
+        width: 45%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .left-img img,
+      .right-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .right-img img {
+        width: 100%;
+        margin-top: 70%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .left-img p,
+      .right-img p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="nav-bar">
+      <div class="logo">
+        <img src="assets/image/logo.png" alt="" width="40px" height="40px" />
+      </div>
+
+      <div class="navbar-menu">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Work</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li><a href="">Gallery</a><i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+      </div>
+    </section>
+    <main>
+      <!-- Hero Section Start From Here -->
+      <section class="hero-section">
+        <div class="hero-img">
+          <img src="assets/images/hero-img.png" alt="" />
+        </div>
+        <div class="hero-text">
+          <h1>Bingkow</h1>
+          <p>Unnerving gaze leading into foggy, mysterious temple.</p>
+        </div>
+        <div class="hero-button">Discover the Truth</div>
+      </section>
+      <!-- Hero Section Ends From Here -->
+
+      <!--  Forest Gaze Section Start From here-->
+      <section class="forest-gaze">
+        <div class="forest-description">
+          <h2>Into the Forest's Gaze</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum a,
+            in sapiente incidunt delectus error?
+          </p>
+          <button>
+            To continue the tale, hover over the image
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="forest-img">
+          <img src="assets/images/forest-gaze.jpg" alt="Forest's Gaze Img" />
+        </div>
+      </section>
+      <!--  Forest Gaze Section Ends From here-->
+
+      <!-- Mysterious Gate Section Start From Here -->
+
+      <section class="mysterious-gate">
+        <div class="mysterious-img-container">
+          <h2>Mysterious Gate</h2>
+          <img
+            src="assets/images/mysterious-img.png"
+            alt="Mysterious Gate Img"
+            class="mysterious-img"
+          />
+          <button class="mysterious-btn">Discover the Secrets</button>
+        </div>
+      </section>
+
+      <!-- Mysterious Gate Section Ends From Here -->
+
+      <!-- After Mysterious Gate Section  -->
+      <section class="afterMysterious">
+        <h2>After Mysterious gate</h2>
+        <img
+          src="assets/images/afterMysterious.png"
+          alt="After Mysterious Img"
+        />
+        <div class="afterMysterious-Boxes">
+          <div class="afterMysterious-Box1">
+            <img src="assets/images/Aokighara1.jpg" alt="Aokighara" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              minus.
+            </p>
+          </div>
+          <div class="afterMysterious-Box2">
+            <img src="assets/images/Aokighara2.avif" alt="Aokighara" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              minus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- After Mysterious Gate Section Ends Here -->
+
+      <!-- Section 6 -->
+      <section class="dark-container">
+        <div class="dark-1stContainer">
+          <img src="assets/images/huntedhouse.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            voluptatem doloribus, perspiciatis iusto id minima eveniet commodi
+            qui quo aspernatur necessitatibus tempora placeat vero aperiam
+            corporis impedit, eligendi sint, ad cum. Repudiandae esse non ex
+            eligendi labore doloremque, quidem incidunt explicabo, odit quod eum
+            hic iure sint qui aut autem!
+          </p>
+        </div>
+        <div class="dark-2ndContainer">
+          <div class="left-img">
+            <img src="assets/images/ghost1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              earum maiores numquam rerum officiis in neque itaque architecto!
+              Fuga, tempore.
+            </p>
+          </div>
+          <div class="right-img">
+            <img src="assets/images/ghost2.avif" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              earum maiores numquam rerum officiis in neque itaque architecto!
+              Fuga, tempore.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
