@@ -27,9 +27,11 @@ The project showcases my ability to design and implement a responsive and intera
 
 To view the webpage locally, follow these steps:
 - **Clone the repository:**:
-  git clone https://github.com/BiwashGurung/FrontendWebDevelopmentCoding-Competition.git
+  ```bash
+   git clone https://github.com/BiwashGurung/FrontendWebDevelopmentCoding-Competition.git
 
 - **Navigate to the project directory:**:
+  ```bash
   cd FrontendWebDevelopmentCoding-Competition
 
  Open the index.html file in your preferred web browser.
