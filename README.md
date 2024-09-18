@@ -1,6 +1,6 @@
 # Frontend Web Development Competition Webpage
 
-This repository contains the code for a webpage developed for the Frontend Web Development Coding Competition, where I achieved 1st place out of 33 contestants. The competition mandated the use of pure HTML, CSS, and JavaScript, with no frameworks allowed. The entire project had to be completed within a 3-hour time limit.
+This repository contains the code for a webpage developed for the Frontend Web Development Coding Competition, where I achieved 1st place out of 33 contestants. The competition mandated the use of pure HTML, CSS, and JavaScript, with no frameworks allowed. The entire project had to be completed within a 3-hour time limit. <br>
 <a href="https://biwashgurung.github.io/FrontendWebDevelopmentCoding-Competition/"><strong>➥ View Live</strong></a>
 
 ## Project Overview
