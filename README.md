@@ -21,28 +21,25 @@ The project showcases my ability to design and implement a responsive and intera
       font-family: bingkow;
       src: url("../font/Bingkow-BF66e3ef79797b9.ttf");
   }
-
-
-## Installation
-
+Installation
 To view the webpage locally, follow these steps:
-- **Clone the repository:**:
-  ```bash
-   git clone https://github.com/BiwashGurung/FrontendWebDevelopmentCoding-Competition.git
 
-- **Navigate to the project directory:**:
-  ```bash
-  cd FrontendWebDevelopmentCoding-Competition
+Clone the repository:
 
- Open the index.html file in your preferred web browser.
+bash
+Copy code
+git clone https://github.com/BiwashGurung/FrontendWebDevelopmentCoding-Competition.git
+Navigate to the project directory:
 
+bash
+Copy code
+cd FrontendWebDevelopmentCoding-Competition
+Open the index.html file in your preferred web browser.
 
- ## Usage
+Usage
 Feel free to explore the code and see how the webpage is structured and styled. You can modify and adapt the code for your own projects or learning purposes.
 
-## Acknowledgments
-- Achieved 1st place in the Frontend Web Development Coding Competition among 33 contestants.
-- This project adheres to the competition rules, utilizing only HTML, CSS, and JavaScript without any frameworks.
-- Includes a custom font (Bingkow) to enhance design.
-
-
+Acknowledgments
+Achieved 1st place in the Frontend Web Development Coding Competition among 33 contestants.
+This project adheres to the competition rules, utilizing only HTML, CSS, and JavaScript without any frameworks.
+Includes a custom font (Bingkow) to enhance design.
