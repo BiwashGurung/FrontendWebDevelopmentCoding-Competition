@@ -2,6 +2,13 @@
 
 This repository contains the code for a webpage developed for the Frontend Web Development Coding Competition, where I achieved 1st place out of 33 contestants. The competition mandated the use of pure HTML, CSS, and JavaScript, with no frameworks allowed.
 
+## Design
+The design for this project was provided as a Figma design. We were required to translate this design into a functional webpage. Here’s the Figma design alongside the final webpage implementation:
+- **Figma Design**: 
+  <img src="assets/images/Design.jpg">
+- **Webpage Implementation**: 
+
+
 ## Project Overview
 
 The project showcases my ability to design and implement a responsive and interactive webpage using only the core web technologies:
